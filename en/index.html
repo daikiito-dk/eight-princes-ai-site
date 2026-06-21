@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eight Princes AI | 八王子のAI導入支援</title>
-<meta name="description" content="八王子市内の企業向けAI導入支援。無料診断→研修→継続コンサルの3段階で、AI活用のはじめの一歩を伴走支援します。">
+<title>Eight Princes AI | AI Adoption Advisory for Hachioji Businesses</title>
+<meta name="description" content="AI adoption support for small and midsize businesses in Hachioji. A three-stage program — free diagnostic, training, and ongoing advisory — to help you take the first step with AI.">
 <link rel="alternate" hreflang="ja" href="https://eightprinces.ai/">
 <link rel="alternate" hreflang="en" href="https://eightprinces.ai/en/">
 <link rel="alternate" hreflang="x-default" href="https://eightprinces.ai/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;700;900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --ink: #1A1A1A;
@@ -24,20 +24,20 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   body {
-    font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", Arial, sans-serif;
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
     color: var(--ink);
     background: var(--bg);
-    line-height: 1.75;
+    line-height: 1.7;
     -webkit-font-smoothing: antialiased;
   }
   a { color: inherit; text-decoration: none; }
-  .serif { font-family: "Noto Serif JP", serif; }
+  .serif { font-family: "Source Serif 4", serif; }
   .container { max-width: 1040px; margin: 0 auto; padding: 0 28px; }
 
   .kicker {
     font-size: 12px;
     font-weight: 700;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.14em;
     color: var(--red);
     text-transform: uppercase;
     margin-bottom: 14px;
@@ -61,7 +61,7 @@
     justify-content: space-between;
     height: 30px;
     font-size: 11px;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.06em;
     color: var(--gray);
     text-transform: uppercase;
   }
@@ -72,13 +72,13 @@
     height: 68px;
   }
   .logo {
-    font-family: "Noto Serif JP", serif;
+    font-family: "Source Serif 4", serif;
     font-weight: 900;
     font-size: 22px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
   }
   .logo .accent { color: var(--red); }
-  nav.links { display: flex; align-items: center; gap: 28px; font-size: 13px; letter-spacing: 0.04em; }
+  nav.links { display: flex; align-items: center; gap: 26px; font-size: 13px; letter-spacing: 0.02em; }
   nav.links a { padding-bottom: 4px; border-bottom: 2px solid transparent; }
   nav.links a:hover { border-bottom-color: var(--red); }
   .lang-switch {
@@ -86,7 +86,7 @@
     padding: 5px 12px;
     font-size: 11px;
     font-weight: 700;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
   }
   .lang-switch:hover { background: var(--ink); color: #fff; border-bottom-color: var(--ink) !important; }
 
@@ -95,24 +95,24 @@
   .hero .eyebrow {
     font-size: 12px;
     font-weight: 700;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.14em;
     color: var(--red);
     text-transform: uppercase;
     margin-bottom: 22px;
   }
   .hero h1 {
-    font-family: "Noto Serif JP", serif;
+    font-family: "Source Serif 4", serif;
     font-weight: 900;
-    font-size: 48px;
-    line-height: 1.35;
+    font-size: 46px;
+    line-height: 1.25;
     max-width: 760px;
     margin-bottom: 28px;
-    letter-spacing: 0.01em;
+    letter-spacing: -0.01em;
   }
   .hero .dek {
     font-size: 17px;
     color: var(--gray);
-    max-width: 560px;
+    max-width: 580px;
     margin-bottom: 36px;
   }
   .btn {
@@ -124,7 +124,7 @@
     padding: 13px 26px;
     font-size: 14px;
     font-weight: 700;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
   }
   .btn:hover { background: var(--ink); color: #fff; }
   .btn.primary { background: var(--red); border-color: var(--red); color: #fff; }
@@ -143,7 +143,7 @@
   .index-bar a {
     font-size: 12px;
     font-weight: 700;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
     padding: 14px 22px 14px 0;
     margin-right: 22px;
     color: var(--gray);
@@ -157,9 +157,9 @@
   section.no-border { border-bottom: none; }
   section .head { max-width: 640px; margin-bottom: 44px; }
   section h2 {
-    font-family: "Noto Serif JP", serif;
+    font-family: "Source Serif 4", serif;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 14px;
   }
   section .lead { color: var(--gray); font-size: 15px; }
@@ -177,7 +177,7 @@
     border-top: 1px solid var(--hairline);
   }
   .pain-item .num {
-    font-family: "Noto Serif JP", serif;
+    font-family: "Source Serif 4", serif;
     font-weight: 900;
     font-size: 22px;
     color: var(--red);
@@ -196,7 +196,7 @@
   }
   .funnel-card:first-child { border-left: none; padding-left: 0; }
   .funnel-card .step {
-    font-family: "Noto Serif JP", serif;
+    font-family: "Source Serif 4", serif;
     font-weight: 900;
     font-size: 38px;
     color: var(--red);
@@ -205,8 +205,8 @@
     line-height: 1;
   }
   .funnel-card h3 {
-    font-family: "Noto Serif JP", serif;
-    font-size: 18px;
+    font-family: "Source Serif 4", serif;
+    font-size: 17px;
     font-weight: 700;
     margin-bottom: 10px;
   }
@@ -222,14 +222,14 @@
     align-items: baseline;
   }
   .diff-item .num {
-    font-family: "Noto Serif JP", serif;
+    font-family: "Source Serif 4", serif;
     font-weight: 900;
     font-size: 26px;
     color: var(--red);
     flex-shrink: 0;
     width: 48px;
   }
-  .diff-item h3 { font-family: "Noto Serif JP", serif; font-size: 17px; margin-bottom: 6px; }
+  .diff-item h3 { font-family: "Source Serif 4", serif; font-size: 16px; margin-bottom: 6px; }
   .diff-item p { font-size: 14px; color: var(--gray); }
 
   /* ---------- Target ---------- */
@@ -242,10 +242,10 @@
     border-top: 1px solid var(--hairline);
   }
   .target-box dt {
-    font-family: "Noto Serif JP", serif;
+    font-family: "Source Serif 4", serif;
     font-weight: 700;
     font-size: 13px;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.03em;
     color: var(--red);
     text-transform: uppercase;
   }
@@ -257,7 +257,7 @@
     color: #fff;
   }
   .cta .kicker { color: var(--red); }
-  .cta h2 { color: #fff; font-family: "Noto Serif JP", serif; }
+  .cta h2 { color: #fff; font-family: "Source Serif 4", serif; }
   .cta .lead { color: #C9C9C9; }
   .cta .btn { border-color: #fff; color: #fff; }
   .cta .btn:hover { background: #fff; color: var(--ink); }
@@ -275,7 +275,7 @@
   .lead-form .field { display: flex; flex-direction: column; gap: 6px; }
   .lead-form label {
     font-size: 12px;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.03em;
     color: #C9C9C9;
     text-transform: uppercase;
   }
@@ -309,14 +309,14 @@
     font-size: 12px;
     color: var(--gray);
     border-top: 1px solid var(--ink);
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
   }
   footer a { color: var(--ink); border-bottom: 1px solid var(--hairline); }
   footer a:hover { border-bottom-color: var(--ink); }
 
   @media (max-width: 760px) {
     nav.links { display: none; }
-    .hero h1 { font-size: 32px; }
+    .hero h1 { font-size: 30px; }
     .pain-grid { grid-template-columns: 1fr; }
     .funnel { grid-template-columns: 1fr; }
     .funnel-card { border-left: none; padding: 24px 0; border-top: 1px solid var(--hairline); }
@@ -331,39 +331,39 @@
 <header>
   <div class="masthead-top">
     <div class="container">
-      <span>HACHIOJI / AI ADOPTION ADVISORY</span>
+      <span>Hachioji / AI Adoption Advisory</span>
       <span id="today"></span>
     </div>
   </div>
   <nav class="main container">
     <div class="logo">EIGHT <span class="accent">PRINCES</span> AI</div>
     <nav class="links">
-      <a href="#pain">課題</a>
-      <a href="#service">サービス</a>
-      <a href="#diff">強み</a>
-      <a href="#target">対象企業</a>
-      <a href="#contact">お問い合わせ</a>
-      <a href="/en/" class="lang-switch">EN</a>
+      <a href="#pain">Challenges</a>
+      <a href="#service">Approach</a>
+      <a href="#diff">Why Us</a>
+      <a href="#target">Who We Serve</a>
+      <a href="#contact">Get Started</a>
+      <a href="/" class="lang-switch">日本語</a>
     </nav>
   </nav>
 </header>
 
 <section class="hero no-border">
   <div class="container">
-    <span class="eyebrow">AI Adoption Strategy ／ 八王子発</span>
-    <h1>AI導入の、<br>最初の一歩を。</h1>
-    <p class="dek">無料診断 → 研修 → 継続コンサルの3段階で、地域の中小企業のAI活用を1人の窓口で伴走支援します。</p>
-    <a class="btn primary" href="#contact">無料AI活用診断に申し込む →</a>
+    <span class="eyebrow">AI Adoption Strategy / From Hachioji</span>
+    <h1>The first step toward AI adoption.</h1>
+    <p class="dek">A three-stage program — free diagnostic, training, and ongoing advisory — guiding small and midsize businesses in Hachioji through AI adoption, end to end, through a single point of contact.</p>
+    <a class="btn primary" href="#contact">Apply for a Free AI Diagnostic →</a>
   </div>
 </section>
 
 <div class="index-bar">
   <div class="container">
-    <a href="#pain"><span>01</span>こんなお悩みは？</a>
-    <a href="#service"><span>02</span>サービス内容</a>
-    <a href="#diff"><span>03</span>選ばれる理由</a>
-    <a href="#target"><span>04</span>対象企業</a>
-    <a href="#contact"><span>05</span>お問い合わせ</a>
+    <a href="#pain"><span>01</span>The Challenge</a>
+    <a href="#service"><span>02</span>Our Approach</a>
+    <a href="#diff"><span>03</span>Why Us</a>
+    <a href="#target"><span>04</span>Who We Serve</a>
+    <a href="#contact"><span>05</span>Get Started</a>
   </div>
 </div>
 
@@ -371,14 +371,14 @@
   <div class="container">
     <div class="head">
       <span class="kicker">The Challenge</span>
-      <h2>こんなお悩みはありませんか？</h2>
-      <p class="lead">AIへの関心は高まっているものの、多くの中小企業が同じ壁にぶつかっています。</p>
+      <h2>Common roadblocks we hear</h2>
+      <p class="lead">Interest in AI is rising — but most small and midsize businesses hit the same wall.</p>
     </div>
     <div class="pain-grid">
-      <div class="pain-item"><span class="num">01</span><p>AIに興味はあるが、何から始めるべきか分からない</p></div>
-      <div class="pain-item"><span class="num">02</span><p>社内にAI活用を推進できる人材・時間が限られている</p></div>
-      <div class="pain-item"><span class="num">03</span><p>ベンダーの説明を聞いても、自社に合うか判断できない</p></div>
-      <div class="pain-item"><span class="num">04</span><p>経営層と現場の理解度・期待値にズレがある</p></div>
+      <div class="pain-item"><span class="num">01</span><p>Interested in AI, but unsure where to start</p></div>
+      <div class="pain-item"><span class="num">02</span><p>Limited internal talent or time to drive adoption</p></div>
+      <div class="pain-item"><span class="num">03</span><p>Hard to evaluate vendor pitches objectively</p></div>
+      <div class="pain-item"><span class="num">04</span><p>Leadership and frontline teams aren't aligned on expectations</p></div>
     </div>
   </div>
 </section>
@@ -387,24 +387,24 @@
   <div class="container">
     <div class="head">
       <span class="kicker">Our Approach</span>
-      <h2>サービス内容</h2>
-      <p class="lead">無料診断から始め、必要に応じて研修・継続コンサルへとステップアップできる3段階構成です。</p>
+      <h2>What we offer</h2>
+      <p class="lead">Start with a free diagnostic, then step up to training and ongoing advisory as needed.</p>
     </div>
     <div class="funnel">
       <div class="funnel-card">
         <span class="step">01</span>
-        <h3>無料AI活用診断</h3>
-        <p>オンラインヒアリング+対面訪問で、現状の課題とAI活用の可能性を可視化します。</p>
+        <h3>Free AI Readiness Diagnostic</h3>
+        <p>Online interviews plus an on-site visit to map your current challenges and where AI can help.</p>
       </div>
       <div class="funnel-card">
         <span class="step">02</span>
-        <h3>研修(経営層/実務担当者)</h3>
-        <p>投資判断に必要な視点と、現場で使うための実践スキルを、対象者別ワークショップで提供します。</p>
+        <h3>Training (Leadership / Practitioners)</h3>
+        <p>Workshops tailored to each audience: investment judgment for leadership, hands-on skills for the teams doing the work.</p>
       </div>
       <div class="funnel-card">
         <span class="step">03</span>
-        <h3>継続コンサル・運用支援</h3>
-        <p>月次の顧問契約で、AI活用の定着と効果検証を継続的に支援します。</p>
+        <h3>Ongoing Advisory &amp; Support</h3>
+        <p>A monthly retainer to support adoption and measure results over time.</p>
       </div>
     </div>
   </div>
@@ -414,21 +414,21 @@
   <div class="container">
     <div class="head">
       <span class="kicker">Why Us</span>
-      <h2>選ばれる理由</h2>
-      <p class="lead">地元密着のAI研修会社やSIerとは異なる、3つの強みがあります。</p>
+      <h2>What sets us apart</h2>
+      <p class="lead">Different from local AI training firms and system integrators, in three ways.</p>
     </div>
     <div class="diff-list">
       <div class="diff-item">
         <span class="num">01</span>
-        <div><h3>地域密着・顔の見える支援</h3><p>八王子市内に限定し、対面での信頼関係を重視した支援を行います。</p></div>
+        <div><h3>Local, hands-on support</h3><p>We work exclusively within Hachioji, prioritizing in-person trust over scale.</p></div>
       </div>
       <div class="diff-item">
         <span class="num">02</span>
-        <div><h3>低コスト・短期間でのPoC提供</h3><p>大手コンサルより安く早く、「まず試せる」を実現します。</p></div>
+        <div><h3>Fast, low-cost pilots</h3><p>Cheaper and faster than large consultancies — built so you can test before you commit.</p></div>
       </div>
       <div class="diff-item">
         <span class="num">03</span>
-        <div><h3>中立的なツール選定・比較力</h3><p>特定ベンダーに偏らず、企業に合うAIツールを客観的に選定します。</p></div>
+        <div><h3>Vendor-neutral expertise</h3><p>Not tied to any single vendor, so recommendations are based on fit, not affiliation.</p></div>
       </div>
     </div>
   </div>
@@ -438,13 +438,13 @@
   <div class="container">
     <div class="head">
       <span class="kicker">Who We Serve</span>
-      <h2>対象企業</h2>
+      <h2>Who we serve</h2>
     </div>
     <div class="target-box">
       <dl>
-        <div class="row"><dt>エリア</dt><dd>八王子市内</dd></div>
-        <div class="row"><dt>規模・業種</dt><dd>中小企業、業種は問わない</dd></div>
-        <div class="row"><dt>こんな方に</dt><dd>「AIに興味はあるが、何から始めるべきか分からない」経営層・AI推進担当者の方</dd></div>
+        <div class="row"><dt>Area</dt><dd>Hachioji City</dd></div>
+        <div class="row"><dt>Size / Industry</dt><dd>Small and midsize businesses, any industry</dd></div>
+        <div class="row"><dt>Best fit</dt><dd>Executives and AI champions who are interested in AI but unsure where to begin</dd></div>
       </dl>
     </div>
   </div>
@@ -453,43 +453,43 @@
 <section id="contact" class="cta no-border">
   <div class="container">
     <span class="kicker">Get Started</span>
-    <h2>無料AI活用診断、<br>まずはお気軽にご相談ください</h2>
-    <p class="lead" style="margin-bottom:32px;">八王子市内の企業様限定で、無料のAI活用診断を実施しています。下記フォームよりお申し込みください。</p>
+    <h2>Ready for a free AI readiness diagnostic?</h2>
+    <p class="lead" style="margin-bottom:32px;">We offer a free AI readiness diagnostic exclusively for businesses in Hachioji. Apply using the form below.</p>
 
     <form id="diagnosis-form" class="lead-form" action="https://docs.google.com/forms/d/e/1FAIpQLSep0hw6fj1frHinNoNi0FE0lAsVcdzQp5SFHk0M35awjxzcKA/formResponse" method="POST" target="hidden_iframe">
       <div class="field">
-        <label for="f-company">会社名 *</label>
+        <label for="f-company">Company Name *</label>
         <input type="text" id="f-company" name="entry.712472515" required>
       </div>
       <div class="field">
-        <label for="f-name">ご担当者名 *</label>
+        <label for="f-name">Your Name *</label>
         <input type="text" id="f-name" name="entry.2031974861" required>
       </div>
       <div class="field">
-        <label>役職 *</label>
+        <label>Role *</label>
         <div class="radio-row">
-          <label><input type="radio" name="entry.562562129" value="経営層" required> 経営層</label>
-          <label><input type="radio" name="entry.562562129" value="AI推進担当者"> AI推進担当者</label>
-          <label><input type="radio" name="entry.562562129" value="その他"> その他</label>
+          <label><input type="radio" name="entry.562562129" value="経営層" required> Executive / Leadership</label>
+          <label><input type="radio" name="entry.562562129" value="AI推進担当者"> AI Champion</label>
+          <label><input type="radio" name="entry.562562129" value="その他"> Other</label>
         </div>
       </div>
       <div class="field">
-        <label for="f-email">メールアドレス *</label>
+        <label for="f-email">Email *</label>
         <input type="email" id="f-email" name="entry.288665885" required>
       </div>
       <div class="field">
-        <label for="f-tel">電話番号</label>
+        <label for="f-tel">Phone</label>
         <input type="tel" id="f-tel" name="entry.1592647139">
       </div>
       <div class="field">
-        <label for="f-msg">ご相談したい内容</label>
+        <label for="f-msg">What would you like to discuss?</label>
         <textarea id="f-msg" name="entry.1713440362" rows="4"></textarea>
       </div>
-      <button type="submit" class="btn primary">無料診断に申し込む →</button>
+      <button type="submit" class="btn primary">Apply for the Free Diagnostic →</button>
     </form>
-    <p id="form-success" class="lead" style="display:none; margin-bottom:28px;">送信しました。担当よりご連絡いたします。</p>
+    <p id="form-success" class="lead" style="display:none; margin-bottom:28px;">Thank you. We'll be in touch shortly.</p>
 
-    <p class="form-note">またはメールで直接ご相談: <a href="mailto:daiki.ito@eightprinces.ai?subject=AI%E6%B4%BB%E7%94%A8%E8%A8%BA%E6%96%AD%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B" style="color:#fff; border-bottom:1px solid #555;">daiki.ito@eightprinces.ai</a></p>
+    <p class="form-note">Or reach out directly by email: <a href="mailto:daiki.ito@eightprinces.ai?subject=AI%20Readiness%20Diagnostic%20Inquiry" style="color:#fff; border-bottom:1px solid #555;">daiki.ito@eightprinces.ai</a></p>
   </div>
 </section>
 
@@ -497,12 +497,12 @@
 
 <footer>
   <div class="container">
-    Eight Princes AI ／ <a href="mailto:daiki.ito@eightprinces.ai">daiki.ito@eightprinces.ai</a>
+    Eight Princes AI / <a href="mailto:daiki.ito@eightprinces.ai">daiki.ito@eightprinces.ai</a>
   </div>
 </footer>
 
 <script>
-  document.getElementById('today').textContent = new Date().toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' });
+  document.getElementById('today').textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 
   (function () {
     var form = document.getElementById('diagnosis-form');
