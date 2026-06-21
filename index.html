@@ -253,6 +253,46 @@
   .cta .btn.primary { background: var(--red); border-color: var(--red); color: #fff; }
   .cta .btn.primary:hover { background: var(--red-dark); border-color: var(--red-dark); }
 
+  /* ---------- Lead form ---------- */
+  .lead-form {
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 28px;
+  }
+  .lead-form .field { display: flex; flex-direction: column; gap: 6px; }
+  .lead-form label {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: #C9C9C9;
+    text-transform: uppercase;
+  }
+  .lead-form input[type="text"],
+  .lead-form input[type="email"],
+  .lead-form input[type="tel"],
+  .lead-form textarea {
+    background: #fff;
+    border: none;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-family: inherit;
+    color: var(--ink);
+  }
+  .lead-form input:focus,
+  .lead-form textarea:focus { outline: 2px solid var(--red); }
+  .lead-form .radio-row { display: flex; gap: 18px; flex-wrap: wrap; }
+  .lead-form .radio-row label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-transform: none;
+    font-size: 14px;
+    color: #fff;
+  }
+  .lead-form button { align-self: flex-start; margin-top: 8px; cursor: pointer; }
+  .form-note { font-size: 12px; color: #C9C9C9; }
+
   footer {
     padding: 28px 0;
     font-size: 12px;
@@ -402,10 +442,46 @@
   <div class="container">
     <span class="kicker">Get Started</span>
     <h2>無料AI活用診断、<br>まずはお気軽にご相談ください</h2>
-    <p class="lead" style="margin-bottom:32px;">八王子市内の企業様限定で、無料のAI活用診断を実施しています。</p>
-    <a class="btn primary" href="mailto:daiki.ito@eightprinces.ai?subject=AI%E6%B4%BB%E7%94%A8%E8%A8%BA%E6%96%AD%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">メールで相談する →</a>
+    <p class="lead" style="margin-bottom:32px;">八王子市内の企業様限定で、無料のAI活用診断を実施しています。下記フォームよりお申し込みください。</p>
+
+    <form id="diagnosis-form" class="lead-form" action="https://docs.google.com/forms/d/e/1FAIpQLSep0hw6fj1frHinNoNi0FE0lAsVcdzQp5SFHk0M35awjxzcKA/formResponse" method="POST" target="hidden_iframe">
+      <div class="field">
+        <label for="f-company">会社名 *</label>
+        <input type="text" id="f-company" name="entry.712472515" required>
+      </div>
+      <div class="field">
+        <label for="f-name">ご担当者名 *</label>
+        <input type="text" id="f-name" name="entry.2031974861" required>
+      </div>
+      <div class="field">
+        <label>役職 *</label>
+        <div class="radio-row">
+          <label><input type="radio" name="entry.562562129" value="経営層" required> 経営層</label>
+          <label><input type="radio" name="entry.562562129" value="AI推進担当者"> AI推進担当者</label>
+          <label><input type="radio" name="entry.562562129" value="その他"> その他</label>
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-email">メールアドレス *</label>
+        <input type="email" id="f-email" name="entry.288665885" required>
+      </div>
+      <div class="field">
+        <label for="f-tel">電話番号</label>
+        <input type="tel" id="f-tel" name="entry.1592647139">
+      </div>
+      <div class="field">
+        <label for="f-msg">ご相談したい内容</label>
+        <textarea id="f-msg" name="entry.1713440362" rows="4"></textarea>
+      </div>
+      <button type="submit" class="btn primary">無料診断に申し込む →</button>
+    </form>
+    <p id="form-success" class="lead" style="display:none; margin-bottom:28px;">送信しました。担当よりご連絡いたします。</p>
+
+    <p class="form-note">またはメールで直接ご相談: <a href="mailto:daiki.ito@eightprinces.ai?subject=AI%E6%B4%BB%E7%94%A8%E8%A8%BA%E6%96%AD%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B" style="color:#fff; border-bottom:1px solid #555;">daiki.ito@eightprinces.ai</a></p>
   </div>
 </section>
+
+<iframe name="hidden_iframe" style="display:none;" title="form submission target"></iframe>
 
 <footer>
   <div class="container">
@@ -415,6 +491,24 @@
 
 <script>
   document.getElementById('today').textContent = new Date().toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' });
+
+  (function () {
+    var form = document.getElementById('diagnosis-form');
+    var iframe = document.querySelector('iframe[name="hidden_iframe"]');
+    var success = document.getElementById('form-success');
+    var submitted = false;
+    if (!form || !iframe) return;
+    form.addEventListener('submit', function () {
+      submitted = true;
+    });
+    iframe.addEventListener('load', function () {
+      if (submitted) {
+        form.style.display = 'none';
+        success.style.display = 'block';
+        submitted = false;
+      }
+    });
+  })();
 </script>
 
 </body>
