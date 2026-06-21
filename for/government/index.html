@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>行政・市町村のご担当者様へ | Eight Princes AI</title>
+<meta name="description" content="八王子市内の自治体・教育機関向けAI研修・連携のご相談。職員研修や市民・事業者向け講師派遣などを承ります。">
+<link rel="canonical" href="https://eightprinces.ai/for/government/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1A1A1A; --red: #C8102E; --red-dark: #8F0B1F; --gray: #6B6B6B;
+    --hairline: #DCDCDC; --bg: #FFFFFF;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", Arial, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.75; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  .container { max-width: 1040px; margin: 0 auto; padding: 0 28px; }
+  .kicker { font-size: 12px; font-weight: 700; letter-spacing: 0.18em; color: var(--red); text-transform: uppercase; margin-bottom: 14px; display: block; }
+
+  header { position: sticky; top: 0; background: var(--bg); z-index: 10; border-bottom: 1px solid var(--ink); }
+  .masthead-top { border-bottom: 4px solid var(--red); }
+  .masthead-top .container { display: flex; align-items: center; justify-content: space-between; height: 30px; font-size: 11px; letter-spacing: 0.08em; color: var(--gray); text-transform: uppercase; }
+  header nav.main { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .logo { font-family: "Noto Serif JP", serif; font-weight: 900; font-size: 22px; letter-spacing: 0.02em; }
+  .logo .accent { color: var(--red); }
+  nav.links { display: flex; align-items: center; gap: 28px; font-size: 13px; letter-spacing: 0.04em; }
+  nav.links a { padding-bottom: 4px; border-bottom: 2px solid transparent; }
+  nav.links a:hover { border-bottom-color: var(--red); }
+  .lang-switch { border: 1px solid var(--ink) !important; padding: 5px 12px; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; }
+  .lang-switch:hover { background: var(--ink); color: #fff; border-bottom-color: var(--ink) !important; }
+
+  .hero { padding: 80px 0 56px; }
+  .hero .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.18em; color: var(--red); text-transform: uppercase; margin-bottom: 22px; }
+  .hero h1 { font-family: "Noto Serif JP", serif; font-weight: 900; font-size: 44px; line-height: 1.35; max-width: 760px; margin-bottom: 28px; }
+  .hero .dek { font-size: 17px; color: var(--gray); max-width: 580px; margin-bottom: 36px; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; border: 1.5px solid var(--ink); color: var(--ink); padding: 13px 26px; font-size: 14px; font-weight: 700; letter-spacing: 0.04em; }
+  .btn:hover { background: var(--ink); color: #fff; }
+  .btn.primary { background: var(--red); border-color: var(--red); color: #fff; }
+  .btn.primary:hover { background: var(--red-dark); border-color: var(--red-dark); }
+
+  section { padding: 64px 0; border-bottom: 1px solid var(--hairline); }
+  section.no-border { border-bottom: none; }
+  section .head { max-width: 640px; margin-bottom: 44px; }
+  section h2 { font-family: "Noto Serif JP", serif; font-weight: 700; font-size: 28px; margin-bottom: 14px; }
+  section .lead { color: var(--gray); font-size: 15px; }
+
+  .pain-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 40px; }
+  .pain-item { display: flex; gap: 18px; padding: 22px 0; border-top: 1px solid var(--hairline); }
+  .pain-item .num { font-family: "Noto Serif JP", serif; font-weight: 900; font-size: 22px; color: var(--red); flex-shrink: 0; }
+  .pain-item p { font-size: 14.5px; color: var(--ink); padding-top: 2px; }
+
+  .cta { background: var(--ink); color: #fff; }
+  .cta .kicker { color: var(--red); }
+  .cta h2 { color: #fff; font-family: "Noto Serif JP", serif; }
+  .cta .lead { color: #C9C9C9; }
+  .cta .btn { border-color: #fff; color: #fff; }
+  .cta .btn:hover { background: #fff; color: var(--ink); }
+  .cta .btn.primary { background: var(--red); border-color: var(--red); color: #fff; }
+  .cta .btn.primary:hover { background: var(--red-dark); border-color: var(--red-dark); }
+
+  .lead-form { max-width: 560px; display: flex; flex-direction: column; gap: 18px; margin-bottom: 28px; }
+  .lead-form .field { display: flex; flex-direction: column; gap: 6px; }
+  .lead-form label { font-size: 12px; letter-spacing: 0.04em; color: #C9C9C9; text-transform: uppercase; }
+  .lead-form input[type="text"], .lead-form input[type="email"], .lead-form input[type="tel"], .lead-form textarea {
+    background: #fff; border: none; padding: 12px 14px; font-size: 14px; font-family: inherit; color: var(--ink);
+  }
+  .lead-form input:focus, .lead-form textarea:focus { outline: 2px solid var(--red); }
+  .lead-form button { align-self: flex-start; margin-top: 8px; cursor: pointer; }
+  .form-note { font-size: 12px; color: #C9C9C9; }
+
+  footer { padding: 28px 0; font-size: 12px; color: var(--gray); border-top: 1px solid var(--ink); letter-spacing: 0.02em; }
+  footer a { color: var(--ink); border-bottom: 1px solid var(--hairline); }
+  footer a:hover { border-bottom-color: var(--ink); }
+
+  @media (max-width: 760px) {
+    nav.links { display: none; }
+    .hero h1 { font-size: 28px; }
+    .pain-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="masthead-top">
+    <div class="container">
+      <span>HACHIOJI / AI ADOPTION ADVISORY</span>
+      <span id="today"></span>
+    </div>
+  </div>
+  <nav class="main container">
+    <div class="logo">EIGHT <span class="accent">PRINCES</span> AI</div>
+    <nav class="links">
+      <a href="#about">概要</a>
+      <a href="#contact">お問い合わせ</a>
+      <a href="/" class="lang-switch">トップへ</a>
+    </nav>
+  </nav>
+</header>
+
+<section class="hero no-border">
+  <div class="container">
+    <span class="eyebrow">For Local Government ／ 行政・市町村のご担当者様へ</span>
+    <h1>八王子市内のAI活用を、<br>ともに広げる。</h1>
+    <p class="dek">自治体・教育機関向けのAI研修や連携プログラムについて、企画から実施までご相談いただけます。地域の中小企業・個人事業主のAI活用を支援する立場から、行政との連携もお受けしています。</p>
+    <a class="btn primary" href="#contact">委託・連携について相談する →</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="head">
+      <span class="kicker">What We Can Help With</span>
+      <h2>ご相談いただける内容</h2>
+      <p class="lead">職員研修から地域連携まで、幅広くご相談に対応しています。</p>
+    </div>
+    <div class="pain-grid">
+      <div class="pain-item"><span class="num">01</span><p>職員向けAI研修の企画・実施</p></div>
+      <div class="pain-item"><span class="num">02</span><p>市民・事業者向けAI活用セミナーの講師依頼</p></div>
+      <div class="pain-item"><span class="num">03</span><p>地域企業のAI活用促進に向けた連携・協力</p></div>
+      <div class="pain-item"><span class="num">04</span><p>その他、AI活用に関するご相談</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="cta no-border">
+  <div class="container">
+    <span class="kicker">Get In Touch</span>
+    <h2>委託・連携について、<br>まずはお気軽にご相談ください</h2>
+    <p class="lead" style="margin-bottom:32px;">内容をお伺いした上で、対応可能な範囲をご案内します。</p>
+
+    <form id="diagnosis-form" class="lead-form" action="https://docs.google.com/forms/d/e/1FAIpQLSep0hw6fj1frHinNoNi0FE0lAsVcdzQp5SFHk0M35awjxzcKA/formResponse" method="POST" target="hidden_iframe">
+      <div class="field">
+        <label for="f-company">自治体・団体名 *</label>
+        <input type="text" id="f-company" name="entry.712472515" required>
+      </div>
+      <div class="field">
+        <label for="f-name">ご担当者名 *</label>
+        <input type="text" id="f-name" name="entry.2031974861" required>
+      </div>
+      <div class="field">
+        <label for="f-role">部署・役職</label>
+        <input type="text" id="f-role" name="entry.562562129">
+      </div>
+      <div class="field">
+        <label for="f-email">メールアドレス *</label>
+        <input type="email" id="f-email" name="entry.288665885" required>
+      </div>
+      <div class="field">
+        <label for="f-tel">電話番号</label>
+        <input type="tel" id="f-tel" name="entry.1592647139">
+      </div>
+      <div class="field">
+        <label for="f-msg">ご相談内容</label>
+        <textarea id="f-msg" name="entry.1713440362" rows="4"></textarea>
+      </div>
+      <button type="submit" class="btn primary">委託・連携について相談する →</button>
+    </form>
+    <p id="form-success" class="lead" style="display:none; margin-bottom:28px;">送信しました。担当よりご連絡いたします。</p>
+
+    <p class="form-note">またはメールで直接ご相談: <a href="mailto:daiki.ito@eightprinces.ai?subject=%E8%A1%8C%E6%94%BF%E9%80%A3%E6%90%BA%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B" style="color:#fff; border-bottom:1px solid #555;">daiki.ito@eightprinces.ai</a></p>
+  </div>
+</section>
+
+<iframe name="hidden_iframe" style="display:none;" title="form submission target"></iframe>
+
+<footer>
+  <div class="container">
+    Eight Princes AI ／ <a href="mailto:daiki.ito@eightprinces.ai">daiki.ito@eightprinces.ai</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('today').textContent = new Date().toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' });
+  (function () {
+    var form = document.getElementById('diagnosis-form');
+    var iframe = document.querySelector('iframe[name="hidden_iframe"]');
+    var success = document.getElementById('form-success');
+    var msgField = document.getElementById('f-msg');
+    var sourceTag = '[流入: 行政ページ] ';
+    var submitted = false;
+    if (!form || !iframe) return;
+    form.addEventListener('submit', function () {
+      submitted = true;
+      if (msgField && msgField.value.indexOf(sourceTag) !== 0) {
+        msgField.value = sourceTag + msgField.value;
+      }
+    });
+    iframe.addEventListener('load', function () {
+      if (submitted) {
+        form.style.display = 'none';
+        success.style.display = 'block';
+        submitted = false;
+      }
+    });
+  })();
+</script>
+
+</body>
+</html>
