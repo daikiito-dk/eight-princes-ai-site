@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>個人事業主の方へ | Eight Princes AI</title>
+<meta name="description" content="八王子市内の個人事業主・フリーランス向けAI導入支援。限られた時間とリソースでも始められる、無料診断からのAI活用支援。">
+<link rel="canonical" href="https://eightprinces.ai/for/freelance/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1A1A1A;
+    --red: #C8102E;
+    --red-dark: #8F0B1F;
+    --gray: #6B6B6B;
+    --line: #1A1A1A;
+    --hairline: #DCDCDC;
+    --bg: #FFFFFF;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  .serif { font-family: "Noto Serif JP", serif; }
+  .container { max-width: 1040px; margin: 0 auto; padding: 0 28px; }
+
+  .kicker {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: var(--red);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    display: block;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    z-index: 10;
+    border-bottom: 1px solid var(--ink);
+  }
+  .masthead-top { border-bottom: 4px solid var(--red); }
+  .masthead-top .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--gray);
+    text-transform: uppercase;
+  }
+  header nav.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+  }
+  .logo {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 900;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+  }
+  .logo .accent { color: var(--red); }
+  nav.links { display: flex; align-items: center; gap: 28px; font-size: 13px; letter-spacing: 0.04em; }
+  nav.links a { padding-bottom: 4px; border-bottom: 2px solid transparent; }
+  nav.links a:hover { border-bottom-color: var(--red); }
+  .lang-switch {
+    border: 1px solid var(--ink) !important;
+    padding: 5px 12px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+  }
+  .lang-switch:hover { background: var(--ink); color: #fff; border-bottom-color: var(--ink) !important; }
+
+  .hero { padding: 80px 0 56px; }
+  .hero .eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: var(--red);
+    text-transform: uppercase;
+    margin-bottom: 22px;
+  }
+  .hero h1 {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.35;
+    max-width: 760px;
+    margin-bottom: 28px;
+    letter-spacing: 0.01em;
+  }
+  .hero .dek {
+    font-size: 17px;
+    color: var(--gray);
+    max-width: 580px;
+    margin-bottom: 36px;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1.5px solid var(--ink);
+    color: var(--ink);
+    padding: 13px 26px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+  .btn:hover { background: var(--ink); color: #fff; }
+  .btn.primary { background: var(--red); border-color: var(--red); color: #fff; }
+  .btn.primary:hover { background: var(--red-dark); border-color: var(--red-dark); }
+
+  .index-bar { border-top: 1px solid var(--ink); border-bottom: 1px solid var(--hairline); }
+  .index-bar .container { display: flex; flex-wrap: wrap; gap: 0; }
+  .index-bar a {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 14px 22px 14px 0;
+    margin-right: 22px;
+    color: var(--gray);
+    white-space: nowrap;
+  }
+  .index-bar a span { color: var(--red); margin-right: 6px; }
+  .index-bar a:hover { color: var(--ink); }
+
+  section { padding: 64px 0; border-bottom: 1px solid var(--hairline); }
+  section.no-border { border-bottom: none; }
+  section .head { max-width: 640px; margin-bottom: 44px; }
+  section h2 { font-family: "Noto Serif JP", serif; font-weight: 700; font-size: 30px; margin-bottom: 14px; }
+  section .lead { color: var(--gray); font-size: 15px; }
+
+  .pain-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 40px; }
+  .pain-item { display: flex; gap: 18px; padding: 22px 0; border-top: 1px solid var(--hairline); }
+  .pain-item .num { font-family: "Noto Serif JP", serif; font-weight: 900; font-size: 22px; color: var(--red); flex-shrink: 0; }
+  .pain-item p { font-size: 14.5px; color: var(--ink); padding-top: 2px; }
+
+  .funnel { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .funnel-card { padding: 0 28px; border-left: 1px solid var(--hairline); }
+  .funnel-card:first-child { border-left: none; padding-left: 0; }
+  .funnel-card .step {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 900;
+    font-size: 38px;
+    color: var(--red);
+    display: block;
+    margin-bottom: 16px;
+    line-height: 1;
+  }
+  .funnel-card h3 { font-family: "Noto Serif JP", serif; font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+  .funnel-card p { font-size: 13.5px; color: var(--gray); }
+
+  .diff-list { display: flex; flex-direction: column; }
+  .diff-item { display: flex; gap: 24px; padding: 26px 0; border-top: 1px solid var(--hairline); align-items: baseline; }
+  .diff-item .num { font-family: "Noto Serif JP", serif; font-weight: 900; font-size: 26px; color: var(--red); flex-shrink: 0; width: 48px; }
+  .diff-item h3 { font-family: "Noto Serif JP", serif; font-size: 17px; margin-bottom: 6px; }
+  .diff-item p { font-size: 14px; color: var(--gray); }
+
+  .cta { background: var(--ink); color: #fff; }
+  .cta .kicker { color: var(--red); }
+  .cta h2 { color: #fff; font-family: "Noto Serif JP", serif; }
+  .cta .lead { color: #C9C9C9; }
+  .cta .btn { border-color: #fff; color: #fff; }
+  .cta .btn:hover { background: #fff; color: var(--ink); }
+  .cta .btn.primary { background: var(--red); border-color: var(--red); color: #fff; }
+  .cta .btn.primary:hover { background: var(--red-dark); border-color: var(--red-dark); }
+
+  .lead-form { max-width: 560px; display: flex; flex-direction: column; gap: 18px; margin-bottom: 28px; }
+  .lead-form .field { display: flex; flex-direction: column; gap: 6px; }
+  .lead-form label { font-size: 12px; letter-spacing: 0.04em; color: #C9C9C9; text-transform: uppercase; }
+  .lead-form input[type="text"],
+  .lead-form input[type="email"],
+  .lead-form input[type="tel"],
+  .lead-form textarea {
+    background: #fff;
+    border: none;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-family: inherit;
+    color: var(--ink);
+  }
+  .lead-form input:focus, .lead-form textarea:focus { outline: 2px solid var(--red); }
+  .lead-form .radio-row { display: flex; gap: 18px; flex-wrap: wrap; }
+  .lead-form .radio-row label { display: flex; align-items: center; gap: 6px; text-transform: none; font-size: 14px; color: #fff; }
+  .lead-form button { align-self: flex-start; margin-top: 8px; cursor: pointer; }
+  .form-note { font-size: 12px; color: #C9C9C9; }
+
+  footer { padding: 28px 0; font-size: 12px; color: var(--gray); border-top: 1px solid var(--ink); letter-spacing: 0.02em; }
+  footer a { color: var(--ink); border-bottom: 1px solid var(--hairline); }
+  footer a:hover { border-bottom-color: var(--ink); }
+
+  @media (max-width: 760px) {
+    nav.links { display: none; }
+    .hero h1 { font-size: 30px; }
+    .pain-grid { grid-template-columns: 1fr; }
+    .funnel { grid-template-columns: 1fr; }
+    .funnel-card { border-left: none; padding: 24px 0; border-top: 1px solid var(--hairline); }
+    .funnel-card:first-child { border-top: none; padding-top: 0; }
+    .index-bar a { margin-right: 14px; padding-right: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="masthead-top">
+    <div class="container">
+      <span>HACHIOJI / AI ADOPTION ADVISORY</span>
+      <span id="today"></span>
+    </div>
+  </div>
+  <nav class="main container">
+    <div class="logo">EIGHT <span class="accent">PRINCES</span> AI</div>
+    <nav class="links">
+      <a href="#pain">課題</a>
+      <a href="#service">サービス</a>
+      <a href="#diff">強み</a>
+      <a href="#contact">お問い合わせ</a>
+      <a href="/" class="lang-switch">トップへ</a>
+    </nav>
+  </nav>
+</header>
+
+<section class="hero no-border">
+  <div class="container">
+    <span class="eyebrow">For Sole Proprietors ／ 個人事業主の方へ</span>
+    <h1>一人だからこそ、<br>AIで差をつける。</h1>
+    <p class="dek">限られた時間・予算でも始められるAI活用を、無料診断からご提案します。経営判断と実務、両方をお一人で担う個人事業主・フリーランスの方向けの内容です。</p>
+    <a class="btn primary" href="#contact">無料AI活用診断に申し込む →</a>
+  </div>
+</section>
+
+<div class="index-bar">
+  <div class="container">
+    <a href="#pain"><span>01</span>こんなお悩みは？</a>
+    <a href="#service"><span>02</span>サービス内容</a>
+    <a href="#diff"><span>03</span>選ばれる理由</a>
+    <a href="#contact"><span>04</span>お問い合わせ</a>
+  </div>
+</div>
+
+<section id="pain">
+  <div class="container">
+    <div class="head">
+      <span class="kicker">The Challenge</span>
+      <h2>個人事業主・フリーランスの方からよく伺うお悩み</h2>
+      <p class="lead">AIへの関心は高まっているものの、一人で進めるからこその難しさがあります。</p>
+    </div>
+    <div class="pain-grid">
+      <div class="pain-item"><span class="num">01</span><p>営業・実務・バックオフィスまで一人で抱えている</p></div>
+      <div class="pain-item"><span class="num">02</span><p>AIツールが多すぎて、何を選べばいいか分からない</p></div>
+      <div class="pain-item"><span class="num">03</span><p>学ぶ時間も、外注する予算も限られている</p></div>
+      <div class="pain-item"><span class="num">04</span><p>独学・自己流での導入に不安がある</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="service">
+  <div class="container">
+    <div class="head">
+      <span class="kicker">Our Approach</span>
+      <h2>サービス内容</h2>
+      <p class="lead">無料診断から始め、必要に応じて実践的な研修・継続コンサルへとステップアップできる3段階構成です。</p>
+    </div>
+    <div class="funnel">
+      <div class="funnel-card">
+        <span class="step">01</span>
+        <h3>無料AI活用診断</h3>
+        <p>オンラインヒアリング+対面訪問で、日々の業務とAI活用の可能性を一緒に整理します。</p>
+      </div>
+      <div class="funnel-card">
+        <span class="step">02</span>
+        <h3>実践ハンズオン研修</h3>
+        <p>すぐ業務で使える範囲に絞った、一人事業主向けの実践的なハンズオン形式です。</p>
+      </div>
+      <div class="funnel-card">
+        <span class="step">03</span>
+        <h3>継続コンサル・運用支援</h3>
+        <p>必要なときだけ相談できる月次サポートで、無理のないペースで定着させます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="diff">
+  <div class="container">
+    <div class="head">
+      <span class="kicker">Why Us</span>
+      <h2>選ばれる理由</h2>
+      <p class="lead">地元密着のAI研修会社やSIerとは異なる、3つの強みがあります。</p>
+    </div>
+    <div class="diff-list">
+      <div class="diff-item">
+        <span class="num">01</span>
+        <div><h3>地域密着・顔の見える支援</h3><p>八王子市内に限定し、対面での信頼関係を重視した支援を行います。</p></div>
+      </div>
+      <div class="diff-item">
+        <span class="num">02</span>
+        <div><h3>低コスト・短期間でのPoC提供</h3><p>大きな投資をせず、「まず試せる」を実現します。</p></div>
+      </div>
+      <div class="diff-item">
+        <span class="num">03</span>
+        <div><h3>中立的なツール選定・比較力</h3><p>特定ベンダーに偏らず、お一人の事業に合うAIツールを客観的に選定します。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="cta no-border">
+  <div class="container">
+    <span class="kicker">Get Started</span>
+    <h2>無料AI活用診断、<br>まずはお気軽にご相談ください</h2>
+    <p class="lead" style="margin-bottom:32px;">八王子市内の個人事業主・フリーランスの方限定で、無料のAI活用診断を実施しています。下記フォームよりお申し込みください。</p>
+
+    <form id="diagnosis-form" class="lead-form" action="https://docs.google.com/forms/d/e/1FAIpQLSep0hw6fj1frHinNoNi0FE0lAsVcdzQp5SFHk0M35awjxzcKA/formResponse" method="POST" target="hidden_iframe">
+      <div class="field">
+        <label for="f-company">屋号・事業名 *</label>
+        <input type="text" id="f-company" name="entry.712472515" required>
+      </div>
+      <div class="field">
+        <label for="f-name">お名前 *</label>
+        <input type="text" id="f-name" name="entry.2031974861" required>
+      </div>
+      <div class="field">
+        <label>区分 *</label>
+        <div class="radio-row">
+          <label><input type="radio" name="entry.562562129" value="経営層" required> 個人事業主</label>
+          <label><input type="radio" name="entry.562562129" value="AI推進担当者"> 開業準備中</label>
+          <label><input type="radio" name="entry.562562129" value="その他"> その他</label>
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-email">メールアドレス *</label>
+        <input type="email" id="f-email" name="entry.288665885" required>
+      </div>
+      <div class="field">
+        <label for="f-tel">電話番号</label>
+        <input type="tel" id="f-tel" name="entry.1592647139">
+      </div>
+      <div class="field">
+        <label for="f-msg">ご相談したい内容</label>
+        <textarea id="f-msg" name="entry.1713440362" rows="4"></textarea>
+      </div>
+      <button type="submit" class="btn primary">無料診断に申し込む →</button>
+    </form>
+    <p id="form-success" class="lead" style="display:none; margin-bottom:28px;">送信しました。担当よりご連絡いたします。</p>
+
+    <p class="form-note">またはメールで直接ご相談: <a href="mailto:daiki.ito@eightprinces.ai?subject=AI%E6%B4%BB%E7%94%A8%E8%A8%BA%E6%96%AD%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B" style="color:#fff; border-bottom:1px solid #555;">daiki.ito@eightprinces.ai</a></p>
+  </div>
+</section>
+
+<iframe name="hidden_iframe" style="display:none;" title="form submission target"></iframe>
+
+<footer>
+  <div class="container">
+    Eight Princes AI ／ <a href="mailto:daiki.ito@eightprinces.ai">daiki.ito@eightprinces.ai</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('today').textContent = new Date().toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' });
+
+  (function () {
+    var form = document.getElementById('diagnosis-form');
+    var iframe = document.querySelector('iframe[name="hidden_iframe"]');
+    var success = document.getElementById('form-success');
+    var msgField = document.getElementById('f-msg');
+    var sourceTag = '[流入: 個人事業主ページ] ';
+    var submitted = false;
+    if (!form || !iframe) return;
+    form.addEventListener('submit', function () {
+      submitted = true;
+      if (msgField && msgField.value.indexOf(sourceTag) !== 0) {
+        msgField.value = sourceTag + msgField.value;
+      }
+    });
+    iframe.addEventListener('load', function () {
+      if (submitted) {
+        form.style.display = 'none';
+        success.style.display = 'block';
+        submitted = false;
+      }
+    });
+  })();
+</script>
+
+</body>
+</html>
