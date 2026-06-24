@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ブログ | Eight Princes AI</title>
+<meta name="description" content="八王子のAI活用に関するコラムと最新のお知らせ。">
+<link rel="canonical" href="https://eightprinces.ai/blog/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1A1A1A; --red: #C8102E; --red-dark: #8F0B1F; --gray: #6B6B6B;
+    --hairline: #DCDCDC; --bg: #FFFFFF;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", Arial, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.75; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  .container { max-width: 1040px; margin: 0 auto; padding: 0 28px; }
+  .kicker { font-size: 12px; font-weight: 700; letter-spacing: 0.18em; color: var(--red); text-transform: uppercase; margin-bottom: 14px; display: block; }
+
+  header { position: sticky; top: 0; background: var(--bg); z-index: 10; border-bottom: 1px solid var(--ink); }
+  .masthead-top { border-bottom: 4px solid var(--red); }
+  .masthead-top .container { display: flex; align-items: center; justify-content: space-between; height: 30px; font-size: 11px; letter-spacing: 0.08em; color: var(--gray); text-transform: uppercase; }
+  header nav.main { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .logo { font-family: "Noto Serif JP", serif; font-weight: 900; font-size: 22px; letter-spacing: 0.02em; }
+  .logo .accent { color: var(--red); }
+  nav.links { display: flex; align-items: center; gap: 28px; font-size: 13px; letter-spacing: 0.04em; }
+  nav.links a { padding-bottom: 4px; border-bottom: 2px solid transparent; }
+  nav.links a:hover { border-bottom-color: var(--red); }
+  .lang-switch { border: 1px solid var(--ink) !important; padding: 5px 12px; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; }
+  .lang-switch:hover { background: var(--ink); color: #fff; border-bottom-color: var(--ink) !important; }
+
+  .hero { padding: 72px 0 48px; }
+  .hero .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.18em; color: var(--red); text-transform: uppercase; margin-bottom: 22px; }
+  .hero h1 { font-family: "Noto Serif JP", serif; font-weight: 900; font-size: 42px; line-height: 1.3; max-width: 760px; margin-bottom: 20px; }
+  .hero .dek { font-size: 16px; color: var(--gray); max-width: 580px; }
+
+  section { padding: 48px 0 64px; }
+  section.no-border { border-bottom: none; }
+
+  .post-list { display: flex; flex-direction: column; }
+  .post-item { padding: 32px 0; border-top: 1px solid var(--hairline); }
+  .post-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; font-size: 12px; color: var(--gray); letter-spacing: 0.02em; }
+  .post-tag { background: var(--red); color: #fff; font-weight: 700; letter-spacing: 0.04em; padding: 3px 10px; text-transform: uppercase; font-size: 11px; }
+  .post-item h2 { font-family: "Noto Serif JP", serif; font-weight: 700; font-size: 22px; margin-bottom: 10px; }
+  .post-item h2 a:hover { color: var(--red); }
+  .post-item .excerpt { font-size: 14px; color: var(--gray); max-width: 660px; }
+
+  footer { padding: 28px 0; font-size: 12px; color: var(--gray); border-top: 1px solid var(--ink); letter-spacing: 0.02em; }
+  footer a { color: var(--ink); border-bottom: 1px solid var(--hairline); }
+  footer a:hover { border-bottom-color: var(--ink); }
+
+  @media (max-width: 760px) {
+    nav.links { display: none; }
+    .hero h1 { font-size: 28px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="masthead-top">
+    <div class="container">
+      <span>HACHIOJI / AI ADOPTION ADVISORY</span>
+      <span id="today"></span>
+    </div>
+  </div>
+  <nav class="main container">
+    <div class="logo">EIGHT <span class="accent">PRINCES</span> AI</div>
+    <nav class="links">
+      <a href="/#service">サービス</a>
+      <a href="/#contact">お問い合わせ</a>
+      <a href="/" class="lang-switch">トップへ</a>
+    </nav>
+  </nav>
+</header>
+
+<section class="hero no-border">
+  <div class="container">
+    <span class="eyebrow">Blog</span>
+    <h1>Eight Princes AI Blog</h1>
+    <p class="dek">八王子のAI活用に関するコラムと、最新のお知らせをお届けします。</p>
+  </div>
+</section>
+
+<section class="no-border">
+  <div class="container">
+    <div class="post-list">
+
+      <article class="post-item">
+        <div class="post-meta">
+          <span class="post-tag">お知らせ</span>
+          <time datetime="2026-06-22">2026.06.22</time>
+        </div>
+        <h2><a href="/blog/eight-princes-ai-launch/">Eight Princes AI、八王子でAI導入支援サービスを始めます</a></h2>
+        <p class="excerpt">八王子市内の中小企業・個人事業主の方向けに、無料診断→研修→継続コンサルの3段階でAI導入を支援するサービスを開始しました。サービス開始の背景と、まず何をご相談いただけるかをご紹介します。</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    Eight Princes AI ／ <a href="mailto:daiki.ito@eightprinces.ai">daiki.ito@eightprinces.ai</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('today').textContent = new Date().toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' });
+</script>
+
+</body>
+</html>

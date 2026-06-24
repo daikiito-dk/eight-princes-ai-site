@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>行政・市町村のご担当者様へ | Eight Princes AI</title>
-<meta name="description" content="八王子市内の自治体・教育機関向けAI研修・連携のご相談。職員研修や市民・事業者向け講師派遣などを承ります。">
-<link rel="canonical" href="https://eightprinces.ai/for/government/">
+<title>Eight Princes AI、八王子でAI導入支援サービスを始めます | Eight Princes AI Blog</title>
+<meta name="description" content="八王子市内の中小企業・個人事業主向けに、無料診断→研修→継続コンサルの3段階でAI導入を支援するサービスを開始しました。">
+<link rel="canonical" href="https://eightprinces.ai/blog/eight-princes-ai-launch/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
@@ -16,9 +16,10 @@
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
-  body { font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", Arial, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.75; -webkit-font-smoothing: antialiased; }
+  body { font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", Arial, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.8; -webkit-font-smoothing: antialiased; }
   a { color: inherit; text-decoration: none; }
   .container { max-width: 1040px; margin: 0 auto; padding: 0 28px; }
+  .container.narrow { max-width: 720px; }
   .kicker { font-size: 12px; font-weight: 700; letter-spacing: 0.18em; color: var(--red); text-transform: uppercase; margin-bottom: 14px; display: block; }
 
   header { position: sticky; top: 0; background: var(--bg); z-index: 10; border-bottom: 1px solid var(--ink); }
@@ -33,30 +34,28 @@
   .lang-switch { border: 1px solid var(--ink) !important; padding: 5px 12px; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; }
   .lang-switch:hover { background: var(--ink); color: #fff; border-bottom-color: var(--ink) !important; }
 
-  .hero { padding: 80px 0 56px; }
-  .hero .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.18em; color: var(--red); text-transform: uppercase; margin-bottom: 22px; }
-  .hero h1 { font-family: "Noto Serif JP", serif; font-weight: 900; font-size: 44px; line-height: 1.35; max-width: 760px; margin-bottom: 28px; }
-  .hero .dek { font-size: 17px; color: var(--gray); max-width: 580px; margin-bottom: 36px; }
+  .post-header { padding: 56px 0 32px; }
+  .back-link { font-size: 12px; font-weight: 700; letter-spacing: 0.04em; color: var(--gray); margin-bottom: 28px; display: inline-block; }
+  .back-link:hover { color: var(--red); }
+  .post-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; font-size: 12px; color: var(--gray); }
+  .post-tag { background: var(--red); color: #fff; font-weight: 700; letter-spacing: 0.04em; padding: 3px 10px; text-transform: uppercase; font-size: 11px; }
+  .post-header h1 { font-family: "Noto Serif JP", serif; font-weight: 900; font-size: 36px; line-height: 1.4; }
+
+  .post-body { padding-bottom: 56px; border-bottom: 1px solid var(--hairline); font-size: 16px; color: var(--ink); }
+  .post-body p { margin-bottom: 22px; }
+  .post-body h2 { font-family: "Noto Serif JP", serif; font-weight: 700; font-size: 22px; margin: 40px 0 16px; }
+  .post-body strong { font-weight: 700; }
+
   .btn { display: inline-flex; align-items: center; gap: 8px; border: 1.5px solid var(--ink); color: var(--ink); padding: 13px 26px; font-size: 14px; font-weight: 700; letter-spacing: 0.04em; }
   .btn:hover { background: var(--ink); color: #fff; }
   .btn.primary { background: var(--red); border-color: var(--red); color: #fff; }
   .btn.primary:hover { background: var(--red-dark); border-color: var(--red-dark); }
 
-  section { padding: 64px 0; border-bottom: 1px solid var(--hairline); }
-  section.no-border { border-bottom: none; }
-  section .head { max-width: 640px; margin-bottom: 44px; }
-  section h2 { font-family: "Noto Serif JP", serif; font-weight: 700; font-size: 28px; margin-bottom: 14px; }
-  section .lead { color: var(--gray); font-size: 15px; }
-
-  .pain-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 40px; }
-  .pain-item { display: flex; gap: 18px; padding: 22px 0; border-top: 1px solid var(--hairline); }
-  .pain-item .num { font-family: "Noto Serif JP", serif; font-weight: 900; font-size: 22px; color: var(--red); flex-shrink: 0; }
-  .pain-item p { font-size: 14.5px; color: var(--ink); padding-top: 2px; }
-
+  section { padding: 64px 0; }
   .cta { background: var(--ink); color: #fff; }
   .cta .kicker { color: var(--red); }
-  .cta h2 { color: #fff; font-family: "Noto Serif JP", serif; }
-  .cta .lead { color: #C9C9C9; }
+  .cta h2 { font-family: "Noto Serif JP", serif; font-weight: 700; font-size: 26px; color: #fff; margin-bottom: 14px; }
+  .cta .lead { color: #C9C9C9; font-size: 15px; }
   .cta .btn { border-color: #fff; color: #fff; }
   .cta .btn:hover { background: #fff; color: var(--ink); }
   .cta .btn.primary { background: var(--red); border-color: var(--red); color: #fff; }
@@ -69,6 +68,8 @@
     background: #fff; border: none; padding: 12px 14px; font-size: 14px; font-family: inherit; color: var(--ink);
   }
   .lead-form input:focus, .lead-form textarea:focus { outline: 2px solid var(--red); }
+  .lead-form .radio-row { display: flex; gap: 18px; flex-wrap: wrap; }
+  .lead-form .radio-row label { display: flex; align-items: center; gap: 6px; text-transform: none; font-size: 14px; color: #fff; }
   .lead-form button { align-self: flex-start; margin-top: 8px; cursor: pointer; }
   .form-note { font-size: 12px; color: #C9C9C9; }
 
@@ -78,8 +79,7 @@
 
   @media (max-width: 760px) {
     nav.links { display: none; }
-    .hero h1 { font-size: 28px; }
-    .pain-grid { grid-template-columns: 1fr; }
+    .post-header h1 { font-size: 26px; }
   }
 </style>
 </head>
@@ -95,48 +95,52 @@
   <nav class="main container">
     <div class="logo">EIGHT <span class="accent">PRINCES</span> AI</div>
     <nav class="links">
-      <a href="#about">概要</a>
-      <a href="#contact">お問い合わせ</a>
-      <a href="/blog/">ブログ</a>
+      <a href="/#service">サービス</a>
+      <a href="/#contact">お問い合わせ</a>
       <a href="/" class="lang-switch">トップへ</a>
     </nav>
   </nav>
 </header>
 
-<section class="hero no-border">
-  <div class="container">
-    <span class="eyebrow">For Local Government ／ 行政・市町村のご担当者様へ</span>
-    <h1>八王子市内のAI活用を、<br>ともに広げる。</h1>
-    <p class="dek">自治体・教育機関向けのAI研修や連携プログラムについて、企画から実施までご相談いただけます。地域の中小企業・個人事業主のAI活用を支援する立場から、行政との連携もお受けしています。</p>
-    <a class="btn primary" href="#contact">委託・連携について相談する →</a>
-  </div>
-</section>
-
-<section id="about">
-  <div class="container">
-    <div class="head">
-      <span class="kicker">What We Can Help With</span>
-      <h2>ご相談いただける内容</h2>
-      <p class="lead">職員研修から地域連携まで、幅広くご相談に対応しています。</p>
+<div class="post-header">
+  <div class="container narrow">
+    <a href="/blog/" class="back-link">← ブログ一覧へ</a>
+    <div class="post-meta">
+      <span class="post-tag">お知らせ</span>
+      <time datetime="2026-06-22">2026.06.22</time>
     </div>
-    <div class="pain-grid">
-      <div class="pain-item"><span class="num">01</span><p>職員向けAI研修の企画・実施</p></div>
-      <div class="pain-item"><span class="num">02</span><p>市民・事業者向けAI活用セミナーの講師依頼</p></div>
-      <div class="pain-item"><span class="num">03</span><p>地域企業のAI活用促進に向けた連携・協力</p></div>
-      <div class="pain-item"><span class="num">04</span><p>その他、AI活用に関するご相談</p></div>
-    </div>
+    <h1>Eight Princes AI、八王子でAI導入支援サービスを始めます</h1>
   </div>
-</section>
+</div>
 
-<section id="contact" class="cta no-border">
+<div class="container narrow">
+  <div class="post-body">
+    <p>このたび、八王子市内の中小企業・個人事業主の方を対象に、AI導入を支援する「Eight Princes AI」を始めることになりました。</p>
+
+    <p>「AIに興味はあるけれど、何から始めればいいか分からない」という声を、これまで多くの現場で耳にしてきました。社内に専任の担当者を置く余裕がない、ベンダーの説明を聞いても自社に合うか判断できない、経営層と現場の間で期待値がズレている。Eight Princes AIは、そうした最初の一歩でつまずきがちな課題に、地域密着で寄り添う窓口を目指してつくりました。</p>
+
+    <h2>名前の由来</h2>
+    <p>「八王子」という地名は、牛頭天王と8人の王子(八将神)を祀る信仰に由来すると伝えられています。地域を守護する8人の王子の伝承に、「企業のAI導入を守護し導く」という意味を重ね、Eight Princes AIと名付けました。</p>
+
+    <h2>3段階で、無理なく進める</h2>
+    <p>サービスは「無料診断 → 研修 → 継続コンサル」の3段階で構成しています。まずは無料のAI活用診断で、オンラインヒアリングと対面訪問を通じて現状の課題とAI活用の可能性を可視化します。そこから必要に応じて、経営層・実務担当者それぞれに向けた研修、月次の継続コンサルへとステップアップしていただける形です。</p>
+
+    <p>八王子市内に活動範囲を絞っているのは、対面での信頼関係を大切にしたいからです。大手コンサルティングに比べて低コスト・短期間で「まず試せる」形を提供し、特定のベンダーに偏らない中立的な立場でツールを選定します。</p>
+
+    <h2>まずはお気軽にご相談ください</h2>
+    <p>企業・法人の方、個人事業主の方はもちろん、行政・教育機関、学生の方、協業をご検討いただけるパートナーやWeb制作会社の方からのご相談も歓迎しています。それぞれの立場に合わせたご案内ページもご用意しました。</p>
+  </div>
+</div>
+
+<section id="contact" class="cta">
   <div class="container">
-    <span class="kicker">Get In Touch</span>
-    <h2>委託・連携について、<br>まずはお気軽にご相談ください</h2>
-    <p class="lead" style="margin-bottom:32px;">内容をお伺いした上で、対応可能な範囲をご案内します。</p>
+    <span class="kicker">Get Started</span>
+    <h2>無料AI活用診断、まずはお気軽にご相談ください</h2>
+    <p class="lead" style="margin-bottom:32px;">八王子市内の企業様限定で、無料のAI活用診断を実施しています。下記フォームよりお申し込みください。</p>
 
     <form id="diagnosis-form" class="lead-form" action="https://docs.google.com/forms/d/e/1FAIpQLSep0hw6fj1frHinNoNi0FE0lAsVcdzQp5SFHk0M35awjxzcKA/formResponse" method="POST" target="hidden_iframe">
       <div class="field">
-        <label for="f-company">自治体・団体名 *</label>
+        <label for="f-company">会社名 *</label>
         <input type="text" id="f-company" name="entry.712472515" required>
       </div>
       <div class="field">
@@ -144,8 +148,12 @@
         <input type="text" id="f-name" name="entry.2031974861" required>
       </div>
       <div class="field">
-        <label for="f-role">部署・役職</label>
-        <input type="text" id="f-role" name="entry.562562129">
+        <label>役職 *</label>
+        <div class="radio-row">
+          <label><input type="radio" name="entry.562562129" value="経営層" required> 経営層</label>
+          <label><input type="radio" name="entry.562562129" value="AI推進担当者"> AI推進担当者</label>
+          <label><input type="radio" name="entry.562562129" value="その他"> その他</label>
+        </div>
       </div>
       <div class="field">
         <label for="f-email">メールアドレス *</label>
@@ -156,14 +164,14 @@
         <input type="tel" id="f-tel" name="entry.1592647139">
       </div>
       <div class="field">
-        <label for="f-msg">ご相談内容</label>
+        <label for="f-msg">ご相談したい内容</label>
         <textarea id="f-msg" name="entry.1713440362" rows="4"></textarea>
       </div>
-      <button type="submit" class="btn primary">委託・連携について相談する →</button>
+      <button type="submit" class="btn primary">無料診断に申し込む →</button>
     </form>
     <p id="form-success" class="lead" style="display:none; margin-bottom:28px;">送信しました。担当よりご連絡いたします。</p>
 
-    <p class="form-note">またはメールで直接ご相談: <a href="mailto:daiki.ito@eightprinces.ai?subject=%E8%A1%8C%E6%94%BF%E9%80%A3%E6%90%BA%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B" style="color:#fff; border-bottom:1px solid #555;">daiki.ito@eightprinces.ai</a></p>
+    <p class="form-note">またはメールで直接ご相談: <a href="mailto:daiki.ito@eightprinces.ai?subject=AI%E6%B4%BB%E7%94%A8%E8%A8%BA%E6%96%AD%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B" style="color:#fff; border-bottom:1px solid #555;">daiki.ito@eightprinces.ai</a></p>
   </div>
 </section>
 
@@ -182,7 +190,7 @@
     var iframe = document.querySelector('iframe[name="hidden_iframe"]');
     var success = document.getElementById('form-success');
     var msgField = document.getElementById('f-msg');
-    var sourceTag = '[流入: 行政ページ] ';
+    var sourceTag = '[流入: ブログ記事] ';
     var submitted = false;
     if (!form || !iframe) return;
     form.addEventListener('submit', function () {
